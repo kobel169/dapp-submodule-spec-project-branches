@@ -1,0 +1,4 @@
+[submodule "dapp-submodule-spec-project-test"]
+	path = dapp-submodule-spec-project-test
+	url = https://github.com/flant/dapp-submodule-spec-project-test.git
+	branch = feature
