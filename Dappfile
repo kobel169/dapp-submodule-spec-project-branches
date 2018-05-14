@@ -1,4 +1,14 @@
 dimg do
   docker.from 'ubuntu:16.04'
-  git.add.to('/app')
+     
+  git do
+    add '/dapp-submodule-spec-project-test' do
+      to '/root'
+      exclude_paths 'bin'
+    end
+    add '/dapp-submodule-spec-project-test/bin/' do
+      to '/root/sup'
+      include_paths 'rails'
+    end
+  end
 end
